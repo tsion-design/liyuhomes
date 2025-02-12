@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #536442;
+    --secondary: #ffd936;
+    --white: #efefef;
+}
+body{
+    fontfamily:"DM Sans", sans-serif;
+    color:var(--primary);
+}
+#main{
+    background-color:#0e3f23;
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;  
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+section{
+    margin: 80px auto;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+    
+}
+.nav-list a{
+    color: black;
+}
+btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-primary{
+    border: none;
+    background: var(--secondary);
+    color:rgb(141, 88, 88);
+}
+.main-content{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 80px;
+color:var(--white);
+}
+.main-content .intro-heading{
+    font-size: 20px;
+}
+.main-content .main-heading{
+    font-size: 50px;
+    margin-top: 20;
+}
+.main-content p{
+    max-width: 1000px;
+    margin-bottom: 5px;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    display: none;
+    width: 40px; 
+}
+.section-tittle h1{
+    font-size: 40px;
+    text-align: center;
+}
+.section-tittle .line{
+    width: 100px;
+    height: 3px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+.properties{
+margin-top: 40px;
+display: flex;
+gap: 16px;
+justify-content: center;
+flex-wrap: wrap;
+}
+.property{
+    width: 350px;
+}
+.property img{
+max-width:100%;
+transition:transform 0.1s ease ;
+}
+.property img:hover{
+    transform: scale(0.9);
+}
+#testimonial   {
+    background: #d9e9c9;
+}
+#testimonial .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap:10px;
+    padding:50px 16px;
+}
+#testimonial h1{
+    font-size: 25px;
+    font-family: "Forum", sans-serif;
+    text-align: center;
+}
+#testimonial .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-us .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+#about-us .container .about-content{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+#about-us .container .about-content h1{
+font-family: "Forum", 'sans serif';
+font-size: 30px;
+}
+#support{
+
+  background: #9dc971;
+  background-position: bottom;
+  background-size: auto;
+  height:300px
+}
+#support .container{
+ 
+ flex-direction: column;
+ height: 50px;
+ gap: 16px;
+}
+#support h1{
+    margin: 20px;
+}
+#support p{
+    margin-top: 25px;
+}
+footer{
+    margin-top: -60px;
+}
+footer .container{
+    padding: 20px 16px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+@media screen and (max-width: 520px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+        background: grey;
+        position: absolute;
+        top: 0;
+        right:-900px;
+        width:80px;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3sec ease;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    .nav-list li :not(:last-child){
+        text-align: left;
+        width: 100px;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+    #about-us .container{
+        flex-direction: column;
+        gap:30px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+}

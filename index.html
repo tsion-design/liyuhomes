@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIYU HOMES</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="main">
+        <div class="container">
+    <nav>
+       <img src="img/logo.png" alt="" class="logo">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li> <a href="#">Properties</a></li>
+            <li> <a href="#">About-us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <img src="./img/menubtn.png" alt="" class="menu-btn">
+    </nav>
+        <div class="main-content">
+            <h1 class="intro-heading">Welcome to </h1>
+            <h1 class="main-heading">Liyu Homes</h1>
+            <p>  Explore premium properties in Addis Ababa with Liyu Homes. <br>
+                 Your dream home awaits—elegance, comfort, and quality. <br>
+                 Experience unmatched service and attention to detail. Discover<br>
+                 luxurious living spaces designed to enhance your lifestyle. With <br>
+                 Liyu Homes, you're not just buying a property; you're investing <br>
+                 in a future filled with sophistication and serenity.</p>
+                <button class="btn btn-primary"> view properties</button>
+         
+         </div>
+         
+        </div>
+
+    </section>
+    <section id="properties">
+        <div class="container">
+            <div class="section-tittle">
+                <h1>Residences</h1>
+                <div class="line"></div>
+            </div>
+            <div class="properties">
+                <div class="property">
+                    <img src="./img/home-1.jfif" alt="">
+                    <h3>Modern elegance</h3>
+                    <p>This elegant two-story house in Bole, priced at 50,000,000,<br>
+                         features 6 bedrooms, 4 bathrooms, and an open kitchen. <br> 
+                         The lush front lawn, tall arched windows, and grand entrance enhance its appeal
+                        </p>
+                </div>
+                    <div class="property">
+                        <img src="./img/home-2.jfif" alt="">
+                        <h3>Modern luxury</h3>
+                        <p>This impressive house in Gerji features 5 bedrooms, 4 bathrooms, a cinema room, <br>
+                            and a large lobby. Its modern design includes large windows, spacious balconies,<br>
+                             and intricate wrought iron railings. With a clean white exterior, it offers ample <br>
+                             amenities and an open, airy feel—an ideal choice for those seeking a luxurious lifestyle.
+                            </p>
+                    </div>
+                        <div class="property">
+                            <img src="./img/home-3.jfif" alt="">
+                            <h3>Stylish haven</h3>
+                            <p>This stunning house in Megenagna has 5 bedrooms, 4 bathrooms, <br>
+                                and a large lobby. Its design features a spacious driveway, <br>
+                                 a small green lawn, and an inviting balcony.
+                                </p>
+                        </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <img src="./img/qoute.png" alt="">
+            <h1>Turning your real estate dreams into reality, one home at a time.</h1>
+            <div class="profile">
+                <img src="./img/profile.png" alt="">
+                <h4>Betelhem Bekele</h4>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h4>ABOUT US</h4>
+                <h1>Welcome to Liyu Homes—your gateway to premium living.</h1>
+                <p>At Liyu Homes, we bring your vision of luxury living to life with a 
+                <br>curated selection of premium properties. Our experienced team offers <br>
+                personalized service, guiding you through every step of the home-buying process. <br>
+                Trust, transparency, and exceptional service are at the heart of what we do. <br>
+                Discover your perfect home with us.</p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="video-container">
+                <video id="aboutUsVideo" controls>
+                    <source src="./img/vedio.mp4" type="vedio/mp4">
+                </video>
+        </div>
+
+    </section>
+    <section id="support">
+        <div class="container">
+            <h1>SUPPORT</h1>
+            <p>
+                At Liyu Homes, we are committed to providing exceptional support to our clients. <br>
+                Whether you're a first-time homebuyer or a seasoned investor, our team is here to <br>
+                assist you every step of the way. From initial inquiries to closing deals, <br>
+                we ensure a seamless and stress-free experience. Our dedicated support team <br>
+                is available to answer your questions, address your concerns, and provide expert <br>
+                guidance to help you make informed decisions. Your satisfaction is our top priority.
+            </p>
+            <button class="btn btn-primary">Get Help</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                    <li>  <a href="#">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">About-us</a></li>
+                    <li><a href="#">Support</a></li>  
+            </ul>
+            <img src="./img/logo.png" alt="" class="footerlogo" />
+            <p>© 2025 Liyu Homes. Your trusted partner in luxury living.</p>
+        </div>
+    </footer>
+    <script>
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+        navBtn.addEventListener('click', function(){
+            navList.classList.toggle("active")
+        })
+    </script>
+   
+
+</body>
+</html>
